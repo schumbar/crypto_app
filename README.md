@@ -1,2 +1,4 @@
 # crypto_app
-Cryptocurrency application that we will use to keep track of current total profit over a time frame.
+Cryptocurrency application that we will do two things: 
+  1. Calculate your total profit (For example: Over a time frame, simple calculations)
+  2. Keep track of crypto coin prices that you like.
