@@ -10,7 +10,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
       ),
       body: Center(
         child: Container(
@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {
               Navigator.pop(context);
             },
-            child: Text(
+            child: const Text(
               'Welcome',
               style: TextStyle(color: Colors.white, fontSize: 25),
             ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ForgotPassword extends StatefulWidget {
+  ForgotPassword({Key? key}) : super(key: key);
   @override
   _ForgotPasswordState createState() => _ForgotPasswordState();
 }
@@ -10,7 +11,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
       ),
       body: Center(
         child: Container(
@@ -22,7 +23,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             onPressed: () {
               Navigator.pop(context);
             },
-            child: Text(
+            child: const Text(
               'Welcome',
               style: TextStyle(color: Colors.white, fontSize: 25),
             ),

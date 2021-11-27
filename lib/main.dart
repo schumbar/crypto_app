@@ -17,7 +17,7 @@ class CryptoTrackerApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoginDemo(),
+      home: const LoginDemo(),
     );
   }
 }
@@ -36,7 +36,7 @@ class _LoginDemoState extends State<LoginDemo> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Login Page"),
+        title: const Text("Login Page"),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -50,7 +50,7 @@ class _LoginDemoState extends State<LoginDemo> {
                     child: Image.asset('asset/images/flutter-logo.png')),
               ),
             ),
-            Padding(
+            const Padding(
               //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
               padding: EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
@@ -60,9 +60,9 @@ class _LoginDemoState extends State<LoginDemo> {
                     hintText: 'Email address'),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 15.0, right: 15.0, top: 15, bottom: 0),
+            const Padding(
+              padding:
+                  EdgeInsets.only(left: 15.0, right: 15.0, top: 15, bottom: 0),
               //padding: EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
                 obscureText: true,
@@ -77,7 +77,7 @@ class _LoginDemoState extends State<LoginDemo> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (_) => ForgotPassword()));
               },
-              child: Text(
+              child: const Text(
                 'Forgot Password',
                 style: TextStyle(color: Colors.blue, fontSize: 15),
               ),
@@ -92,16 +92,16 @@ class _LoginDemoState extends State<LoginDemo> {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (_) => HomePage()));
                 },
-                child: Text(
+                child: const Text(
                   'Login',
                   style: TextStyle(color: Colors.white, fontSize: 25),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 130,
             ),
-            Text('New User? Create Account')
+            const Text('New User? Create Account')
           ],
         ),
       ),
