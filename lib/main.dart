@@ -1,7 +1,11 @@
+import 'package:crypto_app/ui/sign_up.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'ui/login_page.dart';
+import 'ui/forgot_password.dart';
 
-void main() {
+void main() async {
+  await Firebase.initializeApp();
   runApp(const CryptoTrackerApp());
 }
 
@@ -16,7 +20,7 @@ class CryptoTrackerApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(),
+      home: SignUpComponent(),
     );
   }
 }
