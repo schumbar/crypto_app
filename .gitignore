@@ -86,5 +86,5 @@ lint/tmp/
 .DS_Store
 .dart_tool/*
 .vscode/
-.flutter-plugins-dependencies
 .flutter-plugins
+.flutter-plugins-dependencies
