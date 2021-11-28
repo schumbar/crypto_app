@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'HomePage.dart';
-import 'ForgotPassword.dart';
+import 'home_page.dart';
+import 'forgot_password.dart';
 
 void main() {
   runApp(const CryptoTrackerApp());
@@ -17,20 +17,20 @@ class CryptoTrackerApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoginDemo(),
+      home: const LoginPage(),
     );
   }
 }
 
 // I got the login code from this github repository:
 // https://github.com/yogitakumar/logindemo
-class LoginDemo extends StatefulWidget {
-  const LoginDemo({Key? key}) : super(key: key);
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}) : super(key: key);
   @override
-  _LoginDemoState createState() => _LoginDemoState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
-class _LoginDemoState extends State<LoginDemo> {
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +47,7 @@ class _LoginDemoState extends State<LoginDemo> {
                 child: Container(
                     width: 200,
                     height: 150,
-                    child: Image.asset('asset/images/flutter-logo.png')),
+                    child: Image.asset('asset/images/crypto-tracker-logo.png')),
               ),
             ),
             const Padding(
