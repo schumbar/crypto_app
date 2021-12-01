@@ -1,10 +1,11 @@
-import 'package:crypto_app/ui/sign_up.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'ui/login_page.dart';
 import 'ui/forgot_password.dart';
+import 'ui/sign_up.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const CryptoTrackerApp());
 }

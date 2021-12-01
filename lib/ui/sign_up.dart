@@ -8,10 +8,30 @@ class SignUpComponent extends StatefulWidget {
 }
 
 class _SignUpComponentState extends State<SignUpComponent> {
+  TextEditingController _emailField = TextEditingController();
+  TextEditingController _passwordField = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Container(),
+    return Scaffold(
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        decoration: BoxDecoration(color: Colors.blueAccent),
+        child: Column(
+          children: [
+            TextFormField(
+                controller: _emailField,
+                decoration: InputDecoration(hintText: "Enter your email")),
+            TextFormField(
+              controller: _passwordField,
+              obscureText: true,
+            ),
+            Container(),
+            Container(),
+          ],
+        ),
+      ),
     );
   }
 }
